@@ -1,0 +1,2 @@
+-- synchronously download the files to the local NVMe drive
+SELECT crunchy_file_cache.add(crunchy_lake.list_files('s3://crunchy-analytics-datasets-use1/tpch_iceberg/scale_10/public/*/data/*.parquet'));
